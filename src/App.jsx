@@ -4,10 +4,11 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import Characters from './components/Characters';
-import CharactersInfo from './components/CharactersInfo';
-import Login from './components/Login';
 import ProtectedRoutes from './components/ProtectedRoutes';
+import Login from './components/Login';
+import Pokedex from './components/Pokedex';
+import PokemonInfo from './components/PokemonInfo';
+import PokeBall from './assets/pokeball_monochrome.png'
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Login />} />
         <Route element={<ProtectedRoutes />}>
-          <Route path='/characters' element={<Characters />} />
-          <Route path='/charactersinfo' element={<CharactersInfo />} />
+          <Route path='/pokedex' element={<Pokedex />} />
+          <Route path='/pokedex/:pokemonName' element={<PokemonInfo />} />
         </Route>
       </Routes>
     </HashRouter>
