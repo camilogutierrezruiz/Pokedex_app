@@ -19,7 +19,6 @@ const PokemonCard = ({ PokemonUrl }) => {
 
   return (
     <Link
-      className={'pokedex__pokemoncard--linkcard'}
       to={`/pokedex/${pokemonName}`}>
       <div className={'pokedex__pokemoncard'}>
         <h2 className={'pokedex__pokemoncard--pokemonname'}>{pokemonName}</h2>

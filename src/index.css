@@ -21,6 +21,13 @@ body {
   background-color: #dedede;
 }
 
+#root {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
 /* * ==== FORM START ==== */
 
 .form-start__wrapper {
@@ -148,10 +155,51 @@ body {
   width: 100%;
   height: auto;
   padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokedex__ul--wrapper {
+  width: auto;
+  height: auto;
+  display: grid;
+  gap: .2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .pokedex__pokemoncard--linkcard {
-  width: 200px;
+  width: auto;
   height: auto;
+  margin: 1rem;
+  list-style: none;
+}
+
+.pokedex__pokemoncard {
   background-color: red;
+  width: 300px;
+  height: 425px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.pokedex__pokemoncard:hover {
+  transform: scale(102%);
+}
+
+.pokedex__pokemoncard--imgwrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.pokedex__pokemoncard--img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }

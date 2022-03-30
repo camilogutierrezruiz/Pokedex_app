@@ -14,7 +14,7 @@ const Pokedex = () => {
   const [pokemonsInfo, setPokemonsInfo] = useState([]);
   const [pokemonName, setPokemonName] = useState('');
   const [pokemonsType, setPokemonType] = useState([]);
-  const [itemNumber, setItemsNUmber] = useState(10);
+  const [itemNumber, setItemsNUmber] = useState(12);
   const [page, setPage] = useState(1)
 
   useEffect(() => {
@@ -129,11 +129,11 @@ const Pokedex = () => {
         </section>
         <section>
           <select name="" id="" onChange={handleShowPokemons} defaultValue={itemNumber}>
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="20">20</option>
-            <option value="25">25</option>
-            <option value="30">30</option>
+            <option value="8">8</option>
+            <option value="12">12</option>
+            <option value="24">24</option>
+            <option value="32">32</option>
+            <option value="40">40</option>
           </select>
         </section>
         <section className={'pokedex__main--pokemonlist'}>

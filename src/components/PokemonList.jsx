@@ -6,10 +6,12 @@ const PokemonList = ({ Pokemons }) => {
 
   return (
     <>
-      <ul>
+      <ul className={'pokedex__ul--wrapper'}>
         {
           Pokemons.map(pokemon => (
-            <li key={pokemon.url}>
+            <li
+              className={'pokedex__pokemoncard--linkcard'}
+              key={pokemon.url}>
               <PokemonCard PokemonUrl={pokemon.url} />
             </li>
           ))
