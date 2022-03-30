@@ -22,7 +22,7 @@ body {
 }
 
 #root {
-  width: 100%;
+  width: 100vw;
   height: auto;
   display: flex;
   justify-content: center;
@@ -49,7 +49,7 @@ body {
 
 .form-start__logo {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   object-position: center;
   margin-bottom: 3rem;
